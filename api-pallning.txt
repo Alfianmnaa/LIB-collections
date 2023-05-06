@@ -1,0 +1,46 @@
+standar API
+
+{root.api}/{grouping}/{endpoint}
+SAMPLE: https://alfian-lib-collection.com
+
+Authentication
+[1] Register
+{root.api}/auth/register
+req:
+{
+    "name": "akun1"
+    "email" : "akun1@gmail.com"
+    "password": 123456
+}
+
+res:
+{
+    "message": "Register Success"
+    "data": {
+        "id": 1,
+        "name":
+        ...
+    }
+}
+
+err-response:
+400 -> input yang anda masukkan tidak valid
+
+[2] Login
+{root.api}/auth/Login
+
+
+
+
+BLOG
+[1] Create
+{root.api}/post/:id
+req:
+{
+    "title": "Informatika",
+    "image": "inf.png",
+    "text": "lorem2o"
+}
+[2] Get
+[3] Update
+[4] Delete
