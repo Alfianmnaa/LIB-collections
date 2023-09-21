@@ -67,15 +67,6 @@ exports.getallposts = async (req, res) => {
   }
 };
 
-// exports.getallposts = async (req, res) => {
-//   try {
-//     const allpost = await BlogPost.find();
-//     res.status(200).json(allpost);
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// };
-
 // GET ONE
 exports.getonepost = async (req, res) => {
   try {

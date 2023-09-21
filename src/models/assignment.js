@@ -15,6 +15,10 @@ const Assignment = new Schema(
       type: String,
       required: true,
     },
+    kelas: {
+      type: String,
+      required: true,
+    },
   },
   {
     timestamps: true,
