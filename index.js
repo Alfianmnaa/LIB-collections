@@ -31,6 +31,14 @@ mongoose
   .then(console.log("connected to mongoose"))
   .catch((err) => console.log(err));
 
+// testing
+app.get("/", (req, res) => {
+  try {
+    res.send("hallo");
+  } catch (error) {
+    res.status(500).json(error);
+  }
+});
 app.use("/auth", authRoutes);
 app.use("/blog", blogRoutes);
 app.use("/note", noteRoutes);
